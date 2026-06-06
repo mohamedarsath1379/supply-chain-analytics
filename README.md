@@ -407,8 +407,8 @@ Build dashboard following guide
 > **Mohamed Arsath A**
 > Data Analyst | Python | SQL | PostgreSQL | Power BI | ETL Pipeline
 >
-> [LinkedIn](your-linkedin-url) | [GitHub](your-github-url)
-
+- LinkedIn: [Mohamed Arsath A](https://www.linkedin.com/in/mohamedarsath007)
+- GitHub: [mohamedarsath1379](https://github.com/mohamedarsath1379)
 ---
 
 *Dataset: Kaggle — DataCo Global Supply Chain Dataset*
