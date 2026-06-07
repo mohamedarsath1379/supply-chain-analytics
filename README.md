@@ -101,7 +101,7 @@ Foreign Keys:
 | 1 | Which region has most delays? | Europe & Pacific Asia = 60% late rate |
 | 2 | Most profitable product category? | Fishing = #1 profit generator |
 | 3 | Late delivery rate by shipping mode? | Standard Class = highest late rate |
-| 4 | Which country orders most? | Identified via world map analysis |
+| 4 | Which country orders most? | Europe = 52.2K |
 | 5 | Which market drives most profit? | Europe = $1.16M total profit |
 | 6 | Peak sales period? | Q3 (Jul–Sep) = highest sales quarter |
 
