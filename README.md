@@ -13,7 +13,7 @@
 ##  Project Overview
 
 End-to-end supply chain analytics project analyzing **180,519 real global orders**
-across 5 international markets using a production-grade
+across 5 international markets using a
 **Medallion Architecture Data Warehouse** with full **Star Schema** design.
 
 Built a complete data pipeline from raw CSV to an interactive
@@ -21,7 +21,6 @@ Power BI dashboard — using only **fact and dimension tables**
 (no flat files in reporting layer).
 
 ---
-
 ##  Medallion Architecture
 
 ```
@@ -30,7 +29,7 @@ Power BI dashboard — using only **fact and dimension tables**
        DataCoSupplyChainDataset.csv
        180,519 rows | 53 columns
 
-         ↓  Python ETL Pipeline
+         ↓  Automated ETL Pipeline
 
 🥈 SILVER LAYER
    └── Cleaned & transformed data
@@ -41,16 +40,16 @@ Power BI dashboard — using only **fact and dimension tables**
          (is_late_delivery, profit_margin_pct,
           days_delayed, order_quarter, sales_segment)
 
-         ↓  Star Schema Design
+         ↓  Automated ETL Pipeline
 
 🥇 GOLD LAYER — Data Warehouse
    └── PostgreSQL Star Schema
-       ├── fact_orders       (180,519 rows — measures + FK)
-       ├── dim_customer      (customer info)
-       ├── dim_product       (product + category)
-       ├── dim_region        (country + market)
-       ├── dim_shipping      (mode + delivery status)
-       └── dim_date          (full date hierarchy)
+       ├── fact_orders    (180,519 rows — measures + FK)
+       ├── dim_customer   (customer info)
+       ├── dim_product    (product + category)
+       ├── dim_region     (country + market)
+       ├── dim_shipping   (mode + delivery status)
+       └── dim_date       (full date hierarchy)
 
          ↓  Power BI Direct Connection
 
@@ -59,7 +58,6 @@ Power BI dashboard — using only **fact and dimension tables**
        4-page Power BI report
        Connected to Gold layer only
 ```
-
 ---
 
 ## ⭐ Star Schema Design
@@ -98,19 +96,15 @@ Foreign Keys:
 ```
 
 ---
-
-##  Business Questions Answered
-
 | # | Business Question | Answer |
 |---|---|---|
-| 1 | Which region has most delays? | Analyzed via dim_region + fact_orders |
-| 2 | Most profitable product category? | Fishing consistently #1 |
+| 1 | Which region has most delays? | Europe & Pacific Asia = 60% late rate |
+| 2 | Most profitable product category? | Fishing = #1 profit generator |
 | 3 | Late delivery rate by shipping mode? | Standard Class = highest late rate |
 | 4 | Which country orders most? | Identified via world map analysis |
 | 5 | Which market drives most profit? | Europe = $1.16M total profit |
-| 6 | Peak order month? | December every year |
+| 6 | Peak sales period? | Q3 (Jul–Sep) = highest sales quarter |
 
----
 
 ##  Dashboard Preview
 
@@ -372,31 +366,6 @@ Build dashboard following guide
 | Countries | 164 countries |
 
 ---
-
-## 🎯 What Makes This Project Stand Out
-
-```
-✅ Production-grade Medallion Architecture
-   (Bronze → Silver → Gold)
-
-✅ True Star Schema Data Warehouse
-   (Fact + 5 Dimension tables)
-   No flat file in reporting layer!
-
-✅ 15 Advanced SQL queries
-   (CTEs, Window Functions, LAG/LEAD,
-    PERCENTILE_CONT, ROWS BETWEEN)
-
-✅ Automated ETL Pipeline
-   (One function runs entire pipeline)
-
-✅ 20+ DAX measures
-   (YoY trends, KPIs, status labels)
-
-✅ Industrial-level dashboard design
-   (Sidebar navigation, insight banner,
-    world map, decomposition tree)
-```
 
 ---
 
