@@ -149,21 +149,17 @@ Foreign Keys:
 - 3M & 6M moving averages
 - Quarterly trend analysis
 
----
-
-## Key Business Insights
+## 🔑 Key Business Insights
 
 | Finding | Insight |
 |---|---|
-| 🚀 **Peak Month** | December = highest orders every single year |
+| 📈 **Peak Quarter** | Q3 (Jul–Sep) = highest sales every year |
 | ⚠️ **Late Delivery** | ~50% of all orders face delivery delays |
 | 💰 **Top Category** | Fishing generates highest total profit |
-| 🌍 **Best Market** | Europe leads with $1.16M profit |
-| 🚚 **Best Shipping** | Same Day has lowest late delivery rate |
-| 📉 **Risk Products** | Several product lines show consistent losses |
-
----
-
+| 🌍 **Best Market** | Europe leads with $1.16M total profit |
+| 🚚 **Best Shipping** | Same Day = lowest late delivery rate |
+| 🔴 **High Risk** | Europe & Pacific Asia = 60% late rate |
+| 📉 **Loss Products** | Several product lines show consistent losses |
 ## 🛠️ Tools & Technologies
 
 | Tool | Purpose |
