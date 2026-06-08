@@ -75,6 +75,9 @@ dim_product ────── fact_orders ────── dim_region
                     dim_shipping
                     (shipping_key)
 ```
+## ⭐ Star Schema — Data Model
+
+![Data Model](data_model.png)
 
 ### Fact Table — fact_orders
 ```
